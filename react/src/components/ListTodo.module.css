@@ -1,0 +1,23 @@
+.list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list > li{
+  padding: 20px 10px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.list > li:nth-child(3n){
+  background-color: #ffc09f;
+}
+.list > li:nth-child(3n+1){
+  background-color: #a0ced9;
+}
+.list > li:nth-child(3n+2){
+  background-color: #adf7b6;
+}
