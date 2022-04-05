@@ -16,8 +16,14 @@ function handleDisableButton(){
 
 function addTodo(){
   const li = document.createElement('li')
-  li.innerText = input.value
+  const span = document.createElement('span')
+  span.innerText = input.value
+  const close = document.createElement('button')
+  close.innerText = 'x'
+  li.appendChild(span)
+  li.appendChild(close)
   list.appendChild(li)
+  close.addEventListener('click', () => list.removeChild(li))
   input.value = ''
   handleDisableButton()
 }
