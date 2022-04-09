@@ -1,0 +1,30 @@
+.listItem{
+  padding: 20px 10px;
+  border-radius: 5px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listItem > button{
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+}
+
+.listItem > button:hover{
+  color: #000;
+}
+
+.listItem:nth-child(3n){
+  background-color: #ffc09f;
+}
+.listItem:nth-child(3n+1){
+  background-color: #a0ced9;
+}
+.listItem:nth-child(3n+2){
+  background-color: #adf7b6;
+}

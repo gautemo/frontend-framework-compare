@@ -3,8 +3,10 @@
 
   let input = '';
   function addTodo() {
-    $store.todos = [...$store.todos, input]
-    input = '';
+    if(input){
+      $store.todos = [...$store.todos, input]
+      input = '';
+    }
   }
 </script>
 

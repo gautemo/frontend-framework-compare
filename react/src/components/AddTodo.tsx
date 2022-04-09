@@ -7,8 +7,10 @@ export function AddTodo(){
   const context = useStore()
 
   function addTodo() {
-    context.addTodo(input)
-    setInput('')
+    if(input){
+      context.addTodo(input)
+      setInput('')
+    }
   }
 
   return (

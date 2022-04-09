@@ -4,8 +4,10 @@ import { store } from '../store'
 
 const input = ref('')
 function addTodo(){
-  store.todos.push(input.value)
-  input.value = ''
+  if(input.value){
+    store.todos.push(input.value)
+    input.value = ''
+  }
 }
 </script>
 
