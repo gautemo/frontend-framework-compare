@@ -1,0 +1,7 @@
+<ul>
+  <app-list-item 
+    *ngFor="let todo of todos; trackBy: trackByFn" 
+    [todo]="todo"
+    (deleteTodo)="deleteTodo(todo)"
+  ></app-list-item>
+</ul>

@@ -1,0 +1,7 @@
+<section>
+  <label>
+    What to do?
+    <input type="text" [(ngModel)]="input" (keyup.enter)="addTodo()" />
+  </label>
+  <button [disabled]="!input" (click)="addTodo()">Add</button>
+</section>

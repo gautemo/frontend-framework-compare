@@ -1,0 +1,30 @@
+li{
+  padding: 20px 10px;
+  border-radius: 5px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li > button{
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+}
+
+li > button:hover{
+  color: #000;
+}
+
+::ng-deep app-list-item:nth-child(3n) li{
+  background-color: #ffc09f;
+}
+::ng-deep app-list-item:nth-child(3n+1) li{
+  background-color: #a0ced9;
+}
+::ng-deep app-list-item:nth-child(3n+2) li{
+  background-color: #adf7b6;
+}
